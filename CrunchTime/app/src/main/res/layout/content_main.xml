@@ -12,12 +12,96 @@
     tools:context="com.example.taitgu.crunchtime.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calories"
+        android:id="@+id/textView"
+        android:layout_below="@+id/calories"
+        android:layout_centerHorizontal="true" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/pushups"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/calories"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pushups"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/pushups"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/situps"
+        android:layout_alignTop="@+id/pushups"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Situps"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/situps"
+        android:layout_alignStart="@+id/situps" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/jumpingJacks"
+        android:layout_below="@+id/textView2"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginTop="116dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jumping Jacks"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/jumpingJacks"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/jogging"
+        android:layout_alignTop="@+id/jumpingJacks"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jogging"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/jogging"
+        android:layout_alignStart="@+id/jogging" />
+
 </RelativeLayout>
