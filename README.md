@@ -1,6 +1,6 @@
 # PROG 01: Crunch Time
 
-Briefly describe your app here.
+CrunchTime is a simple calorie converter app that allows users to see how many calories they have burned in their workout.
 
 ## Authors
 
